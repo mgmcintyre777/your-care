@@ -11,7 +11,7 @@ app.use(bodyparser.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, "public")));
 
 mongoose.Promise = global.Promise;
-mongoose.connect("mongodb://localhost/project-flight");
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/project-flight");
 
 require("./routes/apiRoutes")(app);
 require("./routes/htmlRoutes")(app);
