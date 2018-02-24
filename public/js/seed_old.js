@@ -21,7 +21,7 @@ $("#question-button").on("click", function() {
   i = questionList.length;
 
   questionList.push({ questionText: q, category: c, qIndex: i });
-  console.log(questionList)
+  console.log({ name: surveyName, questions: questionList })
 });
 
 $("#save-button").on("click", () => {
