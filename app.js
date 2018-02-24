@@ -17,3 +17,4 @@ require("./routes/apiRoutes")(app);
 require("./routes/htmlRoutes")(app);
 
 app.listen(port, _ => console.log(`App Server Listening on Port: ${port}`));
+//fatal error
