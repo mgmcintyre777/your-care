@@ -15,6 +15,7 @@ function restartSurvey() {
   questionIndex = 0;
   let qtxt = surveyJson.questions[questionIndex].questionText;
   surveyQuestion.html(qtxt);
+  alert("Thanks!!");
 }
 
 function nextQuestion() {
