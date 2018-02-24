@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Seed DB</title>
+
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+  <form id="survey-form" action="/api/addSurvey" method="POST">
+    <div>
+      <label for="survey">Survey Name:</label>
+      <input type="text" id="survey" name="name" value="testSurvey">
+    </div>
+    <div>
+      <br>
+      <button id="survey-button">new survey</button>
+    </div>
+  </form>
+
+  <form id='question-form' method="post">
+    <div>
+      <label for="cat">Category:</label>
+      <input type="text" id="cat" name="category" value="cat1">
+    </div>
+    <br>
+    <div>
+      <label for="question">Question:</label>
+      <textarea id="question" name="questionText">question 1</textarea>
+    </div>
+    <br>
+    <div>
+      <button id="question-button">add question</button>
+    </div>
+  </form>
+  <br>
+  <button id="save-button">SAVE</button>
+  <br>
+  <br>
+  <button id="empty-button">EMPTY</button>
+
+  <script src="js/seed_old.js"></script>
+
+</body>
+
+</html>
